@@ -130,7 +130,7 @@ const Index = () => {
               variants={itemVariants}
               whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
             >
-              <h3 className="font-medium text-sit-red text-lg mb-2">Travel Beyond Limits with SIT</h3>
+              <h3 className="font-medium text-sit-red text-lg mb-2">Travel Beyond Limits with SIT (South International Travels)</h3>
             </motion.div>
             <motion.div 
               className="bg-white p-6 shadow-md rounded-sm hover:shadow-lg transition-shadow"
@@ -245,8 +245,8 @@ const Index = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <Button className="px-6 py-3 bg-[#B23A48] text-white font-medium rounded-sm hover:bg-opacity-90 transition-colors">
-              Learn More
+            <Button asChild className="px-6 py-3 bg-[#B23A48] text-white font-medium rounded-sm hover:bg-opacity-90 transition-colors">
+              <a href="/about">Learn More</a>
             </Button>
           </motion.div>
         </div>
@@ -260,8 +260,8 @@ const Index = () => {
           </h2>
           <FlipCardDemo packages={packages} />
           <div className="text-center mt-10">
-            <Button className="px-6 py-3 bg-[#B23A48] text-white font-medium rounded-sm hover:bg-opacity-90 transition-colors">
-              View All Packages
+            <Button asChild className="px-6 py-3 bg-[#B23A48] text-white font-medium rounded-sm hover:bg-opacity-90 transition-colors">
+              <a href="/not-found">New Destinations Coming Soon!</a>
             </Button>
           </div>
         </div>

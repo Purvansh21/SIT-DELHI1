@@ -1,4 +1,4 @@
-import { Gallery4, Gallery4Props } from "@/components/blocks/gallery4";
+import { Gallery4, type Gallery4Props } from "@/components/ui/gallery4";
 
 const travelDestinationsData: Gallery4Props = {
   title: "Featured Travel Destinations",
@@ -50,11 +50,7 @@ const travelDestinationsData: Gallery4Props = {
 };
 
 function Gallery4Demo() {
-  return (
-    <div className="bg-transparent will-change-transform">
-      <Gallery4 {...travelDestinationsData} />
-    </div>
-  );
+  return <Gallery4 {...travelDestinationsData} />;
 }
 
 export { Gallery4Demo }; 

@@ -60,3 +60,13 @@
   transform: translateZ(64px) scale(1.1);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
+
+/* Add scrollbar hiding styles */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}

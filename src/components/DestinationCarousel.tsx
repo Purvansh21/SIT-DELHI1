@@ -80,7 +80,7 @@ const DestinationCarousel: React.FC<DestinationCarouselProps> = ({ destinations,
         <h3 className="text-lg md:text-xl font-bold text-sit-dark mb-2">
           {destinations[activeIndex]?.title || ''}
         </h3>
-        <p className="text-sm md:text-base text-sit-dark/80 max-w-2xl mx-auto text-justify">
+        <p className="text-sm md:text-base text-sit-dark/80 max-w-2xl mx-auto">
           {destinations[activeIndex]?.description || ''}
         </p>
       </motion.div>

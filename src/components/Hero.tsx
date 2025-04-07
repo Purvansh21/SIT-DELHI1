@@ -84,9 +84,9 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4 md:p-8">
         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight animate-fade-in">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-serif font-bold leading-tight animate-fade-in">
             <span className="block mb-2">Explore the World with</span>
-            <div className="h-[1.2em] flex items-center justify-center">
+            <div className="h-[1.5em] md:h-[1.2em] flex items-center justify-center">
               <AnimatedWordCycle 
                 words={["Comfort & Luxury", "Adventure & Excitement", "Serenity & Peace", "Discovery & Wonder"]}
                 interval={4000}
@@ -95,7 +95,7 @@ const Hero = () => {
             </div>
           </h1>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up mt-4">
             <Link to="/quote">
               <Button 
                 className="px-8 py-4 bg-sit-red text-white font-medium rounded-sm hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"

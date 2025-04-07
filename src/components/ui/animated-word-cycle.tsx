@@ -62,7 +62,8 @@ export default function AnimatedWordCycle({
         const elements = measureRef.current.children;
         if (elements.length > currentIndex && elements[currentIndex]) {
           const newWidth = elements[currentIndex].getBoundingClientRect().width;
-          setWidth(`${newWidth}px`);
+          // Add a small buffer to prevent clipping, especially on mobile
+          setWidth(`${newWidth + 8}px`);
         }
       }
     }, 100);
@@ -106,7 +107,7 @@ export default function AnimatedWordCycle({
 
       {/* Visible animated word */}
       <motion.div 
-        className="flex justify-center items-center"
+        className="flex justify-center items-center overflow-visible"
         animate={{ 
           width,
           transition: { 
@@ -120,7 +121,7 @@ export default function AnimatedWordCycle({
         <AnimatePresence mode="wait" initial={false}>
           <motion.span
             key={currentIndex}
-            className={`inline-block font-bold ${className}`}
+            className={`inline-block font-bold ${className} px-[3px]`}
             variants={containerVariants}
             initial="hidden"
             animate="visible"

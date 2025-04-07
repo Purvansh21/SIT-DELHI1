@@ -59,7 +59,7 @@ const Navbar = () => {
               alt="SIT Global Voyager"
               width={180}
               height={60}
-              className="h-[40px] md:h-[60px] w-auto object-contain transition-all duration-300"
+              className="h-[42px] md:h-[48px] w-auto object-contain transition-all duration-300"
               loading="eager"
             />
           </Link>
@@ -92,14 +92,14 @@ const Navbar = () => {
               {isDestinationsOpen && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-sm shadow-lg py-2 animate-fade-in">
                   <Link
-                    to="/destinations/domestic"
+                    to="/not-found"
                     className="block px-4 py-2 text-sit-dark hover:bg-sit-red/10 hover:text-sit-red transition-colors"
                     onClick={() => setIsDestinationsOpen(false)}
                   >
                     Domestic
                   </Link>
                   <Link
-                    to="/destinations/international"
+                    to="/not-found"
                     className="block px-4 py-2 text-sit-dark hover:bg-sit-red/10 hover:text-sit-red transition-colors"
                     onClick={() => setIsDestinationsOpen(false)}
                   >
@@ -160,24 +160,32 @@ const Navbar = () => {
                     isDestinationsOpen ? "rotate-180" : ""
                   }`} />
                 </button>
-                {isDestinationsOpen && (
-                  <div className="pl-4 mt-2 space-y-2 animate-fade-in">
+                <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  isDestinationsOpen ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"
+                }`}>
+                  <div className="pl-4 mt-2 space-y-2 bg-gray-50 rounded-sm">
                     <Link
-                      to="/destinations/domestic"
-                      className="block py-2 text-sit-dark hover:text-sit-red transition-colors"
-                      onClick={() => setIsDestinationsOpen(false)}
+                      to="/not-found"
+                      className="block py-3 px-4 text-sit-dark hover:text-sit-red hover:bg-gray-100 transition-all"
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        setIsDestinationsOpen(false);
+                      }}
                     >
                       Domestic
                     </Link>
                     <Link
-                      to="/destinations/international"
-                      className="block py-2 text-sit-dark hover:text-sit-red transition-colors"
-                      onClick={() => setIsDestinationsOpen(false)}
+                      to="/not-found"
+                      className="block py-3 px-4 text-sit-dark hover:text-sit-red hover:bg-gray-100 transition-all"
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        setIsDestinationsOpen(false);
+                      }}
                     >
                       International
                     </Link>
                   </div>
-                )}
+                </div>
               </div>
               <Link to="/contact" className="block py-2 text-sit-dark hover:text-sit-red transition-colors">
                 Contact Us

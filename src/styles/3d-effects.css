@@ -1,0 +1,28 @@
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.transform-z-32 {
+  transform: translateZ(32px) rotateX(2deg);
+}
+
+@keyframes float {
+  0% {
+    transform: translateZ(20px);
+  }
+  50% {
+    transform: translateZ(32px);
+  }
+  100% {
+    transform: translateZ(20px);
+  }
+}
+
+.hover\:transform-z-32:hover {
+  animation: float 3s ease-in-out infinite;
+}

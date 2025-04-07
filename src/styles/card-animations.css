@@ -1,0 +1,62 @@
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.package-card {
+  position: relative;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transform: translateZ(0);
+}
+
+.package-card:hover {
+  transform: translateZ(32px) rotateX(2deg) rotateY(2deg);
+}
+
+.package-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.package-card:hover::after {
+  opacity: 1;
+}
+
+.package-card-content {
+  transform: translateZ(0);
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.package-card:hover .package-card-content {
+  transform: translateZ(48px);
+}
+
+.package-card-image {
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.package-card:hover .package-card-image {
+  transform: scale(1.08);
+}
+
+.package-card-badge {
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transform: translateZ(0);
+}
+
+.package-card:hover .package-card-badge {
+  transform: translateZ(64px) scale(1.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}

@@ -53,10 +53,10 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center" title="SIT Global Voyager - Home" onClick={handleLogoClick}>
+          <Link to="/" className="flex items-center" title="SIT - Home" onClick={handleLogoClick}>
             <img 
               src="/media/logo.png" 
-              alt="SIT Global Voyager"
+              alt="SIT"
               width={180}
               height={60}
               className="h-[42px] md:h-[48px] w-auto object-contain transition-all duration-300"

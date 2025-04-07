@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4">About Us</h3>
             <p className="text-sm md:text-base text-gray-400">
-              SIT Global Voyager is your trusted partner for unforgettable travel experiences. 
+              SIT is your trusted partner for unforgettable travel experiences. 
               We specialize in creating personalized journeys that cater to your unique preferences.
             </p>
           </div>
@@ -76,7 +76,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-6 md:mt-8 pt-6 md:pt-8 text-center">
           <p className="text-xs md:text-sm text-gray-400">
-            © {new Date().getFullYear()} SIT Global Voyager. All rights reserved.
+            © {new Date().getFullYear()} SIT. All rights reserved.
           </p>
         </div>
       </div>

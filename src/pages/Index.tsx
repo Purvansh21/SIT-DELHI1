@@ -130,28 +130,28 @@ const Index = () => {
               variants={itemVariants}
               whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
             >
-              <h3 className="font-medium text-sit-red text-lg mb-2">Travel Beyond Limits with SIT (South International Travels)</h3>
+              <h3 className="font-medium text-sit-red text-lg mb-2 text-justify">Travel Beyond Limits with SIT (South International Travels)</h3>
             </motion.div>
             <motion.div 
               className="bg-white p-6 shadow-md rounded-sm hover:shadow-lg transition-shadow"
               variants={itemVariants}
               whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
             >
-              <h3 className="font-medium text-sit-red text-lg mb-2">100+ Domestic & 7 International Routes</h3>
+              <h3 className="font-medium text-sit-red text-lg mb-2 text-justify">100+ Domestic & 7 International Routes</h3>
             </motion.div>
             <motion.div 
               className="bg-white p-6 shadow-md rounded-sm hover:shadow-lg transition-shadow"
               variants={itemVariants}
               whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
             >
-              <h3 className="font-medium text-sit-red text-lg mb-2">Fleet of 1000+ Luxury Buses, SUVs & Sedans</h3>
+              <h3 className="font-medium text-sit-red text-lg mb-2 text-justify">Fleet of 1000+ Luxury Buses, SUVs & Sedans</h3>
             </motion.div>
             <motion.div 
               className="bg-white p-6 shadow-md rounded-sm hover:shadow-lg transition-shadow"
               variants={itemVariants}
               whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
             >
-              <h3 className="font-medium text-sit-red text-lg mb-2">Leading Private Passenger Travel Company in Delhi</h3>
+              <h3 className="font-medium text-sit-red text-lg mb-2 text-justify">Leading Private Passenger Travel Company in Delhi</h3>
             </motion.div>
           </motion.div>
           <motion.div 
@@ -233,7 +233,7 @@ const Index = () => {
                   </svg>
                 </motion.div>
                 <h3 className="text-lg font-medium text-sit-dark mb-2">{item.title}</h3>
-                <p className="text-sit-dark/70">{item.description}</p>
+                <p className="text-sit-dark/70 text-justify">{item.description}</p>
               </motion.div>
             ))}
           </motion.div>

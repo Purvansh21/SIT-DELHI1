@@ -103,7 +103,7 @@ const Gallery4 = ({
             <h2 className="text-3xl font-medium md:text-4xl lg:text-5xl">
               {title}
             </h2>
-            <p className="max-w-lg text-muted-foreground">{description}</p>
+            <p className="max-w-lg text-muted-foreground text-justify">{description}</p>
           </div>
           <div className="hidden shrink-0 gap-2 md:flex">
             <Button
@@ -161,7 +161,7 @@ const Gallery4 = ({
                       <div className="mb-2 pt-4 text-xl font-semibold md:mb-3 md:pt-4 lg:pt-4">
                         {item.title}
                       </div>
-                      <div className="mb-8 line-clamp-2 md:mb-12 lg:mb-9">
+                      <div className="mb-8 line-clamp-2 md:mb-12 lg:mb-9 text-justify">
                         {item.description}
                       </div>
                       <div className="flex items-center text-sm">

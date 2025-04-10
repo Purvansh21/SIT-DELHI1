@@ -6,6 +6,91 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Building2, BarChart, GraduationCap, Coins, MapPin, Users, Mail, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
+import InteractiveBentoGallery from '@/components/ui/InteractiveBentoGallery';
+
+const mediaItems = [
+  {
+    id: 1,
+    type: 'image',
+    src: '/media/Franchise Gallery/Gallery (1).webp',
+    url: '/media/Franchise Gallery/Gallery (1).webp',
+    title: 'Franchise Location',
+    desc: 'Explore our beautiful franchise locations across India.',
+    span: 'row-span-2 col-span-2'
+  },
+  {
+    id: 2,
+    type: 'image',
+    src: '/media/Franchise Gallery/Gallery (2).webp',
+    url: '/media/Franchise Gallery/Gallery (2).webp',
+    title: 'SIT Franchise Office',
+    desc: 'Our modern franchise office spaces designed for success.',
+    span: 'col-span-1'
+  },
+  {
+    id: 3,
+    type: 'image',
+    src: '/media/Franchise Gallery/Gallery (3).webp',
+    url: '/media/Franchise Gallery/Gallery (3).webp',
+    title: 'Franchise Partners',
+    desc: 'Meet our successful franchise partners from around the country.',
+    span: 'row-span-1 col-span-1'
+  },
+  {
+    id: 4,
+    type: 'image',
+    src: '/media/Franchise Gallery/Gallery (4).webp',
+    url: '/media/Franchise Gallery/Gallery (4).webp',
+    title: 'Customer Experience',
+    desc: 'Delivering exceptional customer experiences at all our franchise locations.',
+    span: 'row-span-1 col-span-2'
+  },
+  {
+    id: 5,
+    type: 'image',
+    src: '/media/Franchise Gallery/Gallery (5).webp',
+    url: '/media/Franchise Gallery/Gallery (5).webp',
+    title: 'Franchise Training',
+    desc: 'Comprehensive training sessions for our franchise partners.',
+    span: 'row-span-2 col-span-1'
+  },
+  {
+    id: 6,
+    type: 'image',
+    src: '/media/Franchise Gallery/Gallery (6).webp',
+    url: '/media/Franchise Gallery/Gallery (6).webp',
+    title: 'Franchise Growth',
+    desc: 'Witness the growth journey of our franchise network.',
+    span: 'col-span-1'
+  },
+  {
+    id: 7,
+    type: 'image',
+    src: '/media/Franchise Gallery/Gallery (7).webp',
+    url: '/media/Franchise Gallery/Gallery (7).webp',
+    title: 'Business Opportunities',
+    desc: 'Discover lucrative business opportunities with SIT Franchise.',
+    span: 'row-span-1 col-span-2'
+  },
+  {
+    id: 8,
+    type: 'image',
+    src: '/media/Franchise Gallery/Gallery (8).webp',
+    url: '/media/Franchise Gallery/Gallery (8).webp',
+    title: 'Franchise Support',
+    desc: 'Our dedicated team provides continuous support to franchise partners.',
+    span: 'col-span-1'
+  },
+  {
+    id: 9,
+    type: 'image',
+    src: '/media/Franchise Gallery/Gallery (9).webp',
+    url: '/media/Franchise Gallery/Gallery (9).webp',
+    title: 'SIT Franchise Success',
+    desc: 'Success stories from our franchise network across the country.',
+    span: 'col-span-2'
+  }
+];
 
 const Franchise = () => {
   return (
@@ -153,6 +238,13 @@ const Franchise = () => {
               </div>
             </div>
           </motion.div>
+
+          {/* Interactive Gallery Section */}
+          <InteractiveBentoGallery 
+            mediaItems={mediaItems} 
+            title="Explore Our Gallery" 
+            description="Discover the beauty and excitement of our destinations through our curated gallery." 
+          />
 
           {/* Contact Section */}
           <motion.div 

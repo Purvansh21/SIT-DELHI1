@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="overlay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color: rgba(0,0,0,0.2)" />
+      <stop offset="100%" style="stop-color: rgba(0,0,0,0.5)" />
+    </linearGradient>
+    <linearGradient id="sea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color: #48C9B0" />
+      <stop offset="100%" style="stop-color: #1ABC9C" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#85C1E9"/>
+  <path d="M 0 400 Q 200 350, 400 400 T 800 400" fill="url(#sea)"/>
+  <path d="M 0 450 Q 200 400, 400 450 T 800 450" fill="url(#sea)" opacity="0.7"/>
+  <path d="M 300 200 L 400 100 L 500 200 L 450 350 L 350 350 Z" fill="#D4AC0D"/>
+  <path d="M 100 300 Q 150 250, 200 300 T 300 300" fill="#27AE60"/>
+  <path d="M 500 300 Q 550 250, 600 300 T 700 300" fill="#27AE60"/>
+  <circle cx="650" cy="100" r="40" fill="#FFF" opacity="0.8"/>
+  <rect x="0" y="0" width="800" height="600" fill="url(#overlay)" />
+  <text x="400" y="550" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Thailand</text>
+</svg>

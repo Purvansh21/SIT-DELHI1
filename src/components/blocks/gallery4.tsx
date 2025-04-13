@@ -83,6 +83,7 @@ const Gallery4: React.FC<Gallery4Props> = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [imageError, setImageError] = useState<Record<string, boolean>>({});
+  const [imagesLoaded, setImagesLoaded] = useState<Record<string, boolean>>({});
   const autoPlayRef = useRef<NodeJS.Timeout>();
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -91,6 +92,30 @@ const Gallery4: React.FC<Gallery4Props> = ({
 
   // Fallback image for when the main image fails to load
   const fallbackImage = "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80";
+
+  // Preload all images
+  useEffect(() => {
+    const preloadImages = async () => {
+      const imagePromises = safeItems.map((item) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.src = item.image;
+          img.onload = () => {
+            setImagesLoaded(prev => ({ ...prev, [item.id]: true }));
+            resolve(true);
+          };
+          img.onerror = () => {
+            setImageError(prev => ({ ...prev, [item.id]: true }));
+            resolve(false);
+          };
+        });
+      });
+
+      await Promise.all(imagePromises);
+    };
+
+    preloadImages();
+  }, [safeItems]);
 
   useEffect(() => {
     if (isAutoPlaying) {
@@ -181,7 +206,7 @@ const Gallery4: React.FC<Gallery4Props> = ({
                   src={imageToUse}
                   alt={currentItem.title}
                   className="h-full w-full"
-                  priority={currentIndex === 0}
+                  priority={true}
                   onError={() => handleImageError(currentItem.id)}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">

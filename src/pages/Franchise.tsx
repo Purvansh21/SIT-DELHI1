@@ -259,11 +259,18 @@ const Franchise = () => {
             </h2>
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
               <a 
-                href="mailto:franchise@sittravels.com" 
+                href="mailto:info@sittravels.com" 
                 className="flex items-center gap-2 text-gray-700 hover:text-sit-red transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                franchise@sittravels.com
+                info@sittravels.com
+              </a>
+              <a 
+                href="mailto:southinternationaltravels@gmail.com" 
+                className="flex items-center gap-2 text-gray-700 hover:text-sit-red transition-colors"
+              >
+                <Mail className="w-5 h-5" />
+                southinternationaltravels@gmail.com
               </a>
               <a 
                 href="tel:+918178840574" 

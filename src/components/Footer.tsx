@@ -44,9 +44,30 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="lg:col-span-2">
+          <div className="text-center md:text-left">
+            <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4">Contact Us</h3>
+            <div className="space-y-3">
+              <a 
+                href="mailto:southinternationaltravels@gmail.com" 
+                className="flex items-center justify-center md:justify-start gap-2 text-gray-400 hover:text-white transition-colors"
+              >
+                <Mail className="w-6 h-6" />
+                <span className="text-sm md:text-base">southinternationaltravels@gmail.com</span>
+              </a>
+              <a 
+                href="tel:+918178840574" 
+                className="flex items-center justify-center md:justify-start gap-2 text-gray-400 hover:text-white transition-colors"
+              >
+                <Phone className="w-6 h-6" />
+                <span className="text-sm md:text-base">+91 8178840574</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Office Locations */}
+          <div className="lg:col-span-1">
             <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4 text-center md:text-left">Our Offices</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 gap-4 md:gap-6">
               <div className="text-center md:text-left">
                 <h4 className="font-semibold mb-2 text-sm md:text-base">SIT Delhi</h4>
                 <p className="text-xs md:text-sm text-gray-400 mb-4">

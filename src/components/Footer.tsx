@@ -55,7 +55,7 @@ const Footer = () => {
                 <span className="text-sm md:text-base">southinternationaltravels@gmail.com</span>
               </a>
               <a 
-                href="tel:+918178840574" 
+                href="tel:+91-8178840574" 
                 className="flex items-center justify-center md:justify-start gap-2 text-gray-400 hover:text-white transition-colors"
               >
                 <Phone className="w-6 h-6" />

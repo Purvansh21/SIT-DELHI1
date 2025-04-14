@@ -266,13 +266,6 @@ const Franchise = () => {
                 info@sittravels.com
               </a>
               <a 
-                href="mailto:southinternationaltravels@gmail.com" 
-                className="flex items-center gap-2 text-gray-700 hover:text-sit-red transition-colors"
-              >
-                <Mail className="w-5 h-5" />
-                southinternationaltravels@gmail.com
-              </a>
-              <a 
                 href="tel:+918178840574" 
                 className="flex items-center gap-2 text-gray-700 hover:text-sit-red transition-colors"
               >

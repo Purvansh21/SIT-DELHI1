@@ -279,11 +279,11 @@ const GetQuote = () => {
             </h2>
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
               <a 
-                href="mailto:info@sittravels.com" 
+                href="mailto:southinternationaltravels@gmail.com" 
                 className="flex items-center gap-2 text-gray-700 hover:text-sit-red transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                info@sittravels.com
+                southinternationaltravels@gmail.com
               </a>
               <a 
                 href="tel:+91-8178840574" 

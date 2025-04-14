@@ -97,7 +97,7 @@ const Quote = () => {
                   <h4 className="font-medium text-sit-dark mb-4">Have questions? Let's talk!</h4>
                   <div className="flex items-center mb-2">
                     <Mail className="w-5 h-5 text-sit-red mr-2" />
-                    <a href="mailto:info@sittravels.com" className="text-sit-red hover:underline">info@sittravels.com</a>
+                    <a href="mailto:southinternationaltravels@gmail.com" className="text-sit-red hover:underline">southinternationaltravels@gmail.com</a>
                   </div>
                   <div className="flex items-center mb-6">
                     <Phone className="w-5 h-5 text-sit-red mr-2" />

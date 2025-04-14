@@ -270,7 +270,7 @@ const Franchise = () => {
                 className="flex items-center gap-2 text-gray-700 hover:text-sit-red transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                +91 8178840574
+                +91-8178840574
               </a>
             </div>
             <Link to="/contact">

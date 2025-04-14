@@ -101,7 +101,7 @@ const Quote = () => {
                   </div>
                   <div className="flex items-center mb-6">
                     <Phone className="w-5 h-5 text-sit-red mr-2" />
-                    <a href="tel:+918178840574" className="text-sit-red hover:underline">+91 8178840574</a>
+                    <a href="tel:+91-8178840574" className="text-sit-red hover:underline">+91-8178840574</a>
                   </div>
                   <a href="/contact">
                     <Button className="px-6 py-3 bg-sit-red text-white font-medium rounded-sm hover:bg-opacity-90 transition-colors">
